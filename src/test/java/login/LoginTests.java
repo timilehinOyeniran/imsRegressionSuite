@@ -13,8 +13,8 @@ public class LoginTests extends BaseTests {
 
     @Test
     public void testSuccessfulLogin(){
-        loginPage.enterEmail(emailAddress);
-        loginPage.enterPassword(password);
+        loginPage.enterEmail("timilehin.oyeniran@vendease.com");
+        loginPage.enterPassword("P@ssword1");
         loginPage.clickLogin();
         try {
             Thread.sleep(5000);

@@ -47,5 +47,7 @@ public class HomePage {
         driver.findElement(productPage).click();
         return new ProductSetupPage(driver);
     }
-
+    private void getSelectors(String locators){
+     driver.findElement(By.cssSelector(locators)).click();
+    }
 }
